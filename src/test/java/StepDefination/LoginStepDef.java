@@ -19,7 +19,7 @@ public class LoginStepDef extends BaseClass {
         driver.get("https://admin-demo.nopcommerce.com/");
     }
 
-    @When("Enter user Id as {string} & password as {string}")
+    @When("^Enter user Id as (.*) & password as (.*)$")
     public void enter_user_id_password(String userID, String password) {
 
         ObjectProvider objectProvider =new ObjectProvider();
